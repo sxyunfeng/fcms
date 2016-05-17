@@ -582,7 +582,7 @@ class IndexController extends Controller
         $routerContent = file_get_contents( $routerFile );
         
         $modulePattern = "/setDefaultModule(\s)*\((\s)*\'(\w)*\'(\s)*\)(\s)*;/";
-        $moduleRep = "setDefaultModule( 'home' );";
+        $moduleRep = "setDefaultModule( 'cms' );";
         $firstChange = preg_replace( $modulePattern, $moduleRep, $routerContent );
         
         $controllerPattern = "/setDefaultController(\s)*\((\s)*\'(\w)*\'(\s)*\)(\s)*;/";
