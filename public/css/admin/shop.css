@@ -1,0 +1,25 @@
+button 
+{
+    margin-right:50px;
+    width:70px;
+}
+.light{
+    font-size:20px;
+    cursor:pointer;
+}
+.remove {
+    margin-left: 10px;
+    font-size:18px;
+    color:gray;
+}
+.remove:hover, .add:hover {
+    color:green;
+    cursor:pointer;
+}
+tr:first-child .remove {
+    display:none;
+}
+.qqNumber {
+    border:0;
+    width:100%;
+}

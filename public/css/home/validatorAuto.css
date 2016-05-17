@@ -1,0 +1,66 @@
+.onShow{
+	background:url(/img/home/huiyuan_img/onShow.gif) no-repeat; 
+	padding-left:25px; 
+	position:absolute;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+}
+.onFocus{
+	background:#E9F0FF url(/img/home/huiyuan_img/onFocus.gif) no-repeat; 
+	padding-left:25px; 
+	position:absolute;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+}
+.onError
+{
+	background:#FFF2E9 url(/img/home/huiyuan_img/onError.gif) no-repeat; 
+	padding-left:25px; 
+	position:absolute;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+}
+.onCorrect
+{
+	background:#E9FFEB url(/img/home/huiyuan_img/onSuccess.gif) no-repeat; 
+	padding-left:25px; 
+	position:absolute;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+}
+.onLoad
+{
+	background:#E9FFEB url(/img/home/huiyuan_img/onLoad.gif) no-repeat 3px 3px; 
+	padding-left:25px; 
+	position:absolute;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+} 
+
+.formValidateTip
+{
+	/*word-wrap:break-word; Զ,FFжӢĺЧ*/
+    position:absolute;
+    /*width:250px;
+    border:1px solid #a00;*/
+    padding:10px;
+	magin-left:-9999px;
+    /*display:none; *//*ȲҪʾ*/
+	background:transparent;
+}
+
+.formValidateTip1
+{
+	/*word-wrap:break-word; Զ,FFжӢĺЧ*/
+    position:absolute;
+    /*width:250px;
+    border:1px solid #a00;
+    padding:10px;*/
+    /*display:none; *//*ȲҪʾ*/
+	background:transparent;
+}

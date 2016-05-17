@@ -1,0 +1,132 @@
+@CHARSET "UTF-8";
+body{
+	margin: 0;
+	padding:0;
+	font-family:"微软雅黑";
+	font-size:14px;
+	background-image: url("/img/install/background_image4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.self_header{
+	text-align:center;
+	color:#555;
+	font-size:50px;
+	font-family:"汉仪菱心体简";
+	margin:40px auto 20px;
+	border-bottom:1px solid #bfbfbf;
+}
+.self_main{
+	background-color:rgba(255, 255, 255, 0.75);
+	margin:5% auto;
+}
+.self_btn_circular_active{
+	font-size:16px;
+	height:100px;
+	width:100px;
+	border:7px solid #fff;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%; 
+	color:#fff;
+	background-color:#e43a3a;
+	word-wrap:break-word;
+	word-break:break-all;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+.self_btn_circular{
+	font-size:16px;
+	height:100px;
+	width:100px;
+	border:7px solid #fff;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%; 
+	color:#333;
+	background-color:#f1f1f1;
+	word-wrap:break-word;
+	word-break:break-all;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+.self_btn_normal{
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	border-bottom:5px solid #a82828;
+	background-color:#e43a3a;
+}
+.self_procedure{
+	list-style:none;
+	padding:0;
+	width:100%;
+	margin:0 auto 20px;
+}
+.self_procedure li{
+	padding:0 0 20px;
+	text-align:center;
+}
+.self_license_content{
+	margih:0 auto;
+	padding:15px;
+	max-height:400px;
+	overflow-x:hidden;
+	overflow:auto;
+	background-color:#fff;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+.self_table{
+	background-color:#fff;
+	opacity:0.80;
+	filter:alpha(opacity=80);
+}
+.self_table > thead > tr > th, .self_table > tbody > tr > th, .self_table > tfoot > tr > th, .self_table > thead > tr > td, .self_table > tbody > tr > td, .self_table > tfoot > tr > td{
+	padding:15px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	vertical-align:middle;
+}
+.self_panel{
+	width:100%;
+	margin:0 auto;
+	opacity:0.80;
+	filter:alpha(opacity=80);
+}
+.self_panel_heading{
+	border-bottom:1px solid #e0e0e0;
+}
+.table-hover > tbody > tr:hover {
+	background-color: #fcebeb;
+}
+.table > thead > tr > th,
+.table > thead > tr > td {
+	border-bottom-width: 1px;
+}
+.self_choose_step{
+	margin:20px auto;
+	width:100%;
+}
+.self_choose_step div{
+	padding:0;
+}
+.self_choose_step > div > button, .self_choose_step > div > a{
+	width:200px;
+}
+.self_input{
+	
+}
+.self_fixd_tdwidth{
+	width:350px;
+}
+.error{
+	color:#e43a3a;
+}
+p{
+	word-wrap:break-word;
+	word-wrap:break-all;
+}

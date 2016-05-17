@@ -1,0 +1,160 @@
+@CHARSET "UTF-8";
+html{
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body{
+	margin: 0;
+	padding:0;
+	font-family: "微软雅黑";
+	font-size:14px;
+	background-color:#eeeded;
+}
+
+
+.collapse > ul > li > a:hover,.collapse > ul > li > a:focus{
+	color:#fff;
+	background-color:#d60000;
+}
+
+
+
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+.container{
+	padding:0;
+}
+.page-header{
+	border-bottom:1px solid #b4b4b4;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.no > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.no > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.no > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.no > a:focus{
+	color:#fff;
+	background-color:#d60000;
+}
+.dropdown-menu{
+	padding:0 0 5px 0;
+}
+.navbar-default .navbar-nav > li > a{
+	color:#000;
+}
+.navbar-brand{
+	padding:0 15px;
+}
+.nav{
+	margin-left:20px;
+}
+.collapse > ul > li > a{
+	padding:20px;
+}
+.navbar{
+	margin-bottom:0;
+}
+.navbar-form{
+	margin:13px -15px;
+}
+.navbar .nav > li .dropdown-menu {
+	margin: 0;
+}
+.navbar .nav > li:hover .dropdown-menu {
+	display: block;
+}
+a{
+	color:#000;
+}
+a:hover,a:active,a:focus{
+	text-decoration:none;
+	color:#cc0000;
+}
+.btn-danger{
+	color:#fff;
+}
+.self_header{
+	height:40px;
+	line-height:40px;
+	margin:0 auto;
+}
+.self_nopadding{
+	padding:0;
+}
+.self_nomargin{
+	margin:0;
+}
+.self_navbar{
+	background-color:#fff !important;
+	color:#fefefe;
+	border:0;
+	border-radius:0;
+	z-index:1000;
+}
+.self_subtitle{
+	float:right;
+	padding-top:10px;
+}
+.self_subtitle:hover,
+.self_subtitle:focus{
+	color:#d60000;
+}
+.self_footer{
+	background-color:#fff;
+	margin-top:20px;
+	padding:30px 0;
+	border-top:1px solid #e7e7e7;
+}
+.self_footer_bottom{
+	padding-top:20px;
+	height:100px;
+	margin-top:20px;
+	border-top:1px solid #b4b4b4;
+	text-align:center;
+}
+.self_returntotop{
+	position:fixed;
+	right:2%;
+	bottom:5%;
+	z-index:100;
+}
+.self_returntotop span{
+	font-size:50px;
+	color:#333;
+}
+.self_returntotop span:hover{
+	cursor:pointer;
+}
+.self_white_area{
+	background-color:#fff;
+}
+
+
+.self_link_header{
+	padding:0;
+	border:none;
+	margin:10px 0;
+}
+.self_link_header a{
+	font-size:15px;
+}
+.self_link_content{
+	padding:0 15px;
+}
+.self_link_content span{
+	display:inline-block;
+	padding-right:20px;
+}
+

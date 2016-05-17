@@ -1,0 +1,139 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+/* 公共样式  */
+.hide{
+	display:hidden;
+}
+.show{
+	display:show;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+
+/* 修改bootstrap部分样式 */
+.control-label{
+	color:#676A6C;	
+}
+.form-horizontal{
+	margin-top:25px;
+}
+.form-group{
+	margin-bottom:20px !important;
+}
+.col-sm-10{
+	width:500px !important;	
+}
+
+/* validation 错误提示信息样式 */
+.error-message-box{
+	height:34px;
+	width:200px;
+	float:left;
+	line-height:34px;
+	font-size:14px;
+	color:#DE595C;
+}
+.pl{
+	padding-left:30px !important;
+}
+
+/* 面包屑 */
+.list-crumbs{
+	background-color:white !important;
+}
+.list-crumbs span{
+	margin-right:5px;
+}
+.list-crumbs a{
+	text-decoration:none !important;
+}
+
+/* list筛选 */
+.list-filterbox{
+	border-bottom:1px solid #EEEEEE;
+	padding-bottom:10px;
+}
+.list-addbtn{
+	margin-left:15px;
+	float:left;
+}
+.list-search{
+	float:right;
+	widht:200px;
+	margin-right:5px;
+}
+.list-filter{
+	float:right;
+	margin-right:40px;
+	height:35px;
+	line-height:35px;
+	cursor:pointer;
+}
+.list-filter span:hover{
+	color:#2483C5;
+}
+.list-filter a{
+	text-decoration:none !important;
+}
+
+/* list */
+.list-table{
+	margin-top:15px;
+}
+.table{
+	border-bottom:2px solid #DDDDDD;
+}
+.table tbody tr:hover{
+	background-color:#F5F5F5;
+}
+.table tbody td{
+	width:16%;
+}
+.table span{
+	margin-right:6px;
+	font-size:13px;
+	color:#2688C7;
+	cursor:pointer
+}
+
+/* 分页 */
+.pager{
+	margin-top:30px !important;
+}
+.list-curpage{
+	width:35px;
+	border:1px solid #DDDDDD;
+}
+.pager a{
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+
+/* 保存按钮 */
+.add-btn-sub{
+	width:120px;
+	margin:20px 15px 0 0;
+	font-family:"微软雅黑";
+}
+
+
+/************** 详情页 ***************/
+.self-label-title, .process-area-title{
+	font-size:18px;
+	font-weight:600;
+	display:block;
+	padding:0 15px 5px;
+}
+
+/* 自定义标签 */
+.approve-read-only{
+	padding:20px 0;
+	background-color:#F5F5F5;
+	border:1px solid #E3E3E3;
+	border-radius:7px;
+}
+.approve-read-only span:first-child{
+	height:28px;
+	line-height:30px;
+	font-size:15px;
+}
+
+/* 流程情况  */
+.process-area{
+	margin-top:25px;
+}
+.process-list{
+	border:1px solid #E3E3E3;
+	border-radius:7px;
+	padding:10px 40px;
+	margin-bottom:25px;
+}
+.process-list ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+.process-list ul li{
+	padding:10px 20px;
+}
+.process-list ul li span{
+	padding-right:80px;
+}
+
+.panel-heading{
+	overflow:hidden;
+	background-color:#F5F5F5 !important;
+}
+.panel-title div:first-child{
+	width:120px;
+}
+.panel-title div{
+	float:left;
+	margin-right:20px;
+	padding:5px 0 5px 20px;
+}
+.panel-title a{
+	font-size:14px;
+	font-weight:600;
+	text-decoration:none !important;
+}
+.panel-title .glyphicon{
+	margin-top:5px;
+}
+.panel-group, .panel-default{
+	margin-bottom:10px !important;
+}
+
+/* 新增审批 */
+.approve-add{
+	background-color:#F5F5F5;
+	border:1px solid #E3E3E3;
+	border-radius:7px;
+	padding:30px 0 10px;
+}
+
+/******** 审批详情 **********/
+.approve-detail-info{
+	font-size:14px;
+	padding-top:7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

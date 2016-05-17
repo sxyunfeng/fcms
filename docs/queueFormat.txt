@@ -1,0 +1,66 @@
+发送邮箱一些约定
+ $this->queue->put( array(
+        'type' => \enums\MsgType::EMAIL_SEND,
+        'body' => array(             	
+                        'email' => '163@163.com',
+                        'message' => '华尔商城赠送一个优惠券给你',
+        )	
+));
+
+
+
+// session 安全日志
+$this->queue->put( array(
+		'type' => LogEnums::LOG_ADMIN_SESSION_LOG,
+		'body' => array(
+				'userId' => $adminUserInfo['id'],    //用户 id
+				'userName' => $adminUserInfo['loginname'], // 用户名称
+				'addTime' => $_SERVER['REQUEST_TIME'],     //攻击时间
+				'url' 	=> $_SERVER['REQUEST_URI']		//请求的url
+		)
+));
+
+//前台/后台用户操作日志
+$this->queue->put( array(
+    			'type' => \enums\LogEnums::LOG_HOME_OPERATION_LOG,
+    			'body' => array(
+    					'userId' => $adminUserInfo['mem_id'],
+    					'userName' => $adminUserInfo['username'],
+    					'controller' => $controller,
+    					'action' => $method,
+    					'operation' => $op,
+    					'addTime' => $_SERVER['REQUEST_TIME'],
+    					'postContent' => $_POST,
+    					'url' => APP_ROOT . 'apps/' . $_SERVER['REQUEST_URI'] . 'Action'
+    			)
+    	));
+    	
+//前台用户登录日志    	
+$this->queue->put( array(
+            		'type' => \enums\LogEnums::LOG_MEM_LOGIN_LOG,
+            		'body' => array(
+            			'memberInfo' => $members,	//前台用户session信息
+            			'loginIp' => $_SERVER['REMOTE_ADDR'],
+            			'loginStatus' => 0 //0：login	1：logout
+            		)
+));    	
+    	
+
+//发送消息 记录异常
+$this->queue->put( array(
+		'type' => \enums\LogEnums::LOG_RECORDEXCEPTION,
+		'body' => array(
+				'message' => 'Error:[' . date("Y-m-d H:i:s",time()) . ']apps/home/' 
+					. $controller.'/'. $method . '注释信息读取出错'
+		)
+));	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	

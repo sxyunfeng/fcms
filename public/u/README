@@ -1,0 +1,72 @@
+使用方法
+只需要在原配置参数基础之上添加
+bizt及sid参数即可 具体用法可参看demo.php
+
+
+开发与升级方法
+
+使用 UEditor 编辑器自带的插件实现图片上传和文件上传功能，
+这里通过配置 UEditor 单独使用其内置的第三方插件swfupload 来实现图片和文件的上传，
+通过对 UEditor 配置轻松实现图片批量上传，文件披批量上传。此方法兼容最新版 UEditor 1.4.3 版本
+
+
+UEditor 1.4.3 版本配置：图片上传和文件上传独立使用方法
+
+第一步：先配置UEditor
+
+<script src="ueditor/ueditor.config.js">
+</script><script src="ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript">    
+var editor = UE.getEditor('myEditor', {
+        initialFrameWidth: 800,        
+        initialFrameHeight: 300,    
+        });
+</script>
+
+第二步：放置编辑器
+<script type="text/plain" id="myEditor"></script>
+
+第三步：以上已经把UEditor部署好了，下面实现单独使用图片和文件上传
+<script type="text/javascript">
+    //重新实例化一个编辑器，防止在上面的editor编辑器中显示上传的图片或者文件
+    var _editor = UE.getEditor('upload_ue');
+    _editor.ready(function () {
+        //设置编辑器不可用
+        //_editor.setDisabled();
+        //隐藏编辑器，因为不会用到这个编辑器实例，所以要隐藏
+        _editor.hide();
+        //侦听图片上传
+        _editor.addListener('beforeInsertImage', function (t, arg) {
+            //将地址赋值给相应的input
+            $("#picture").attr("value", arg[0].src);
+            //图片预览
+            $("#preview").attr("src", arg[0].src);
+        })
+        //侦听文件上传
+        _editor.addListener('afterUpfile', function (t, arg) {
+            $("#file").attr("value", _editor.options.filePath + arg[0].url);
+        })
+    });
+    //弹出图片上传的对话框
+    function upImage() {
+        var myImage = _editor.getDialog("insertimage");
+        myImage.open();
+    }
+    //弹出文件上传的对话框
+    function upFiles() {
+        var myFiles = _editor.getDialog("attachment");
+        myFiles.open();
+    }
+</script>
+
+第四步：最后一步，对文件上传非常重要，
+在ueditor文件夹中找到文件dialogs\attachment\attachment.js中找到代码editor.execCommand("insertHTML",str);在上面添加下面的代码
+editor.fireEvent('afterUpfile', filesList);
+
+然后在<body></body>中随便找个位置放置这个编辑器
+
+<script type="text/plain" id="upload_ue"></script>
+
+说明：可以把两次初始化编辑的代码合并一起放到文件最后的</body>前面，图片上传的配置就不说了，附件中例子已经配置好了，下载下来参考一下就行。转载请标明出处。
+
+version 0.0.2已完成基本的fastdfs与ueditor相结合的开发

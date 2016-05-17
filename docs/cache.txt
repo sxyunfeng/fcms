@@ -1,0 +1,34 @@
+后台
+admin_left_menu_$groupid_$shop_id					后台菜单
+
+admin_$controller_$action_cache						后台controller action cache注释信息
+								
+mem_$controller_$action_cache						前台controller action cache注释信息				
+
+前台
+fe_
+
+
+cms		
+	----- 缓存配置项的缓存
+	
+		per_缓存名称_cache						cms 缓存配置项的缓存
+		
+	
+	----- 应用缓存
+			
+		f_cms_site_info						cms站点信息										
+		f_cms_menu_info						cms菜单导航
+		f_cms_index_article_list			cms首页文章
+		
+	----- 页面缓存
+		
+		f_cms_page_index_cache				cms 首页页面缓存					
+		f_cms_page_list_cache				cms 列表页面缓存
+		f_cms_page_detail_cache				cms 详细页面缓存
+		
+	----- 静态化缓存
+		
+		f_cms_static_index_cache			cms 首   页静态化缓存 
+		f_cms_static_list_cache				cms 列表页静态化缓存
+		f_cms_static_detail_cache 			cms 详细页静态化缓存

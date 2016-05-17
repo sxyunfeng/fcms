@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* Z_TypeList */
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+a{color:#5e5e5e;text-decoration:none;}
+a:hover{color:#ed135d;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体"; background:#f7f7f7;}
+/* yourweb_container */
+ .left_menu{width:1200px; margin:0 auto;}
+.Z_TypeList{width:207px;overflow:visible;display:block; }
+.Z_TypeList .Z_MenuList{width:207px;overflow:hidden; position:absolute;border:1px solid #CCC; float:left;z-index:10001;  -webkit-box-shadow:2px 2px 5px #888;-moz-box-shadow:2px 2px 5px #888;box-shadow:2px 2px 5px #888;}
+.Z_TypeList .Z_MenuList ul{list-style:none;}
+.Z_TypeList .Z_MenuList ul li{display:block;position:relative;padding-left:10px;background:#ffffff;line-height:34px;cursor:pointer;border-top:1px solid #ffffff;border-bottom:1px solid #ffffff;}
+.Z_TypeList .Z_MenuList h3{padding-left:30px;font-weight:bold;font-family:Microsoft YaHei;font-size:12px;}
+.Z_TypeList .Z_MenuList ul li.alt{background:#f1f1f1;}
+/*修改背景颜色*/
+.Z_TypeList .Z_MenuList ul li.curr{background:#c80000;color:#ffffff;cursor:pointer;border-top:1px solid #6c5143;border-bottom:1px solid #6c5143;}
+.Z_TypeList .Z_MenuList ul li p{padding:0px 0px 2px 5px;line-height:20px;font-size:12px;display:block;}
+.Z_TypeList .Z_MenuList ul li p a{color:#888888;text-decoration:none;padding:0px 2px;line-height:20px;height:20px;}
+.Z_TypeList .Z_MenuList ul li p a:hover{text-decoration:underline;}
+.Z_TypeList .Z_MenuList ul li.curr p a{color:#ffffff;}
+/*.Z_TypeList .Z_MenuList h3,.Z_TypeList .menuIcon,.Z_TypeList .btn_group{background:url(../img/icon_type_list.png) no-repeat;}*/
+.Z_TypeList .menuIcon{position:absolute;display:block;width:5px;height:9px;top:40%;right:10px;background-position:-7px -480px;overflow:hidden;}
+.Z_TypeList .btn_group{position:absolute;display:block;width:45px;height:21px;top:4px;right:10px;background-position:-0px -492px;overflow:hidden;}
+.Z_TypeList .btn_group.bleft{background-position:-0px -492px;}
+.Z_TypeList .btn_group.bright{background-position:-0px -518px;}
+.Z_TypeList .btn_group .bleft{margin:1px 0px 1px 1px;float:left;display:block;height:19px;width:21px;cursor:pointer;}
+.Z_TypeList .btn_group .bright{margin:1px 1px 1px 0px;float:right;display:block;height:19px;width:21px;cursor:pointer;}
+.Z_TypeList .btn_group.bleft .bright{cursor:default;}
+.Z_TypeList .btn_group.bright .bleft{cursor:default;}
+/* Z_SubList */
+.Z_SubList{position:absolute;overflow:visible;min-width:500px;/*min-height:500px;*/_width:500px;/*_height:500px;*/border:1px solid #dfdfdf;  margin-left:208px;-webkit-box-shadow:2px 2px 5px #888;-moz-box-shadow:2px 2px 5px #888;box-shadow:2px 2px 5px #888;display:none;z-index:99999;}
+.Z_SubList .subView{width:744px;height:auto;max-height:525px;padding:10px 10px 10px 0;background: #ffffff;}
+.Z_SubList ul{height:auto;max-height:505px;margin:10px 0 15px 20px;display:inline-block;*display:inline;*zoom:1;_margin:10px 0 15px 8px;vertical-align:top;overflow:hidden;*overflow:visible;}
+.Z_SubList .subItem{width:218px;overflow:hidden; float:left; margin-left:15px;}
+.Z_SubList .subItem-hd{height:34px;line-height:34px;border-bottom:2px solid #000;font-size:15px;font-family:'Lucida Grande','\5fae\8f6f\96c5\9ed1';margin-bottom:6px;}
+.Z_SubList .subItem-hd a{color:#000;}
+.Z_SubList .subItem-title{height:15px;line-height:15px;font-weight:normal;padding:7px 0 4px;}
+.Z_SubList .subItem p{padding-bottom:5px;margin-left:-11px;}
+.Z_SubList .subItem p.subItem-brand{padding-bottom:15px;}
+.Z_SubList .subItem p a{display:inline-block;height:15px;line-height:15px;color:#646464;margin:2px 0 4px;}
+.Z_SubList .brandTitle{border-top:1px dotted #000;margin-right:1px;}
+.Z_SubList .subItem-cat a,.Z_SubList .subItem-brand a{border-left:1px solid #EAEAEA;padding:0 5px 0 10px;}
+.Z_SubList .subItemAd{width:218px;height:32px;background-color:#eee;margin-top:10px;}
+.Z_SubList .subItemAd a{display:block;width:218px;}

@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+body{
+	padding:0;
+	margin:0;
+	font-family:'微软雅黑';
+	color:#67696e;
+}
+a{
+	color:#67696e;
+}
+a:hover,
+a:visited,
+a:active{
+	color:black;
+	text-decoration:none;
+	cursor:pointer;
+}
+ul{
+	padding:0;
+	margin:0;
+	list-style-type:none
+}
+
+/* 主框架 */
+
+/* animation只支持webkit内核的浏览器,即chrome，firefox */
+.bsc_op_btn span:hover{
+	animation-name:shake;
+	animation-duration:1s;
+	animation-timing-function:ease;
+	animation-iteration-count:1;/* 动画播放次数 */
+}
+@-webkit-keyframes shake{
+	0%{-webkit-transform:scale(1);}
+	10%, 
+	20%{-webkit-transform:scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 
+	90%{-webkit-transform:scale(1.2) rotate(3deg);}
+	40%, 60%, 
+	80%{-webkit-transform:scale(1.2) rotate(-3deg);}
+	100%{-webkit-transform:scale(1) rotate(0);}
+}
+@-moz-keyframes shake{
+	0%{-moz-transform:scale(1);}
+	10%, 
+	20%{-moz-transform:scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 
+	90%{-moz-transform:scale(1.2) rotate(3deg);}
+	40%, 60%, 
+	80%{-moz-transform:scale(1.2) rotate(-3deg);}
+	100%{-moz-transform:scale(1) rotate(0);}
+}
+.row{
+	margin:0;
+}
+[class *= col-]{
+	padding:0;
+}
+.home_main{
+	max-width:1200px;
+	min-width:768px;
+	margin:0 auto;
+	padding:0;
+}
+.home_main > div{
+	margin:20px 0;
+}
+.home_header{
+	font-size:16px;
+	color:#888;
+}
+.home_square{
+	width:280px;
+	height:130px;
+	border-radius:10px;
+	display:inline-block;
+	margin:0 20px 10px 0;
+}
+.home_square:hover{
+	cursor:pointer;
+}
+.home_square > div{
+	float:left;
+}
+.home_square_header{
+	font-size:16px;
+	color:#888;
+	margin:0 10px;
+	height:40px;
+	line-height:40px;
+}
+.home_square_icon{
+	width:120px;
+}
+.home_square_icon img{
+	padding-top:35px;
+	float:right;
+}
+.home_square_content{
+	padding:26px 0 0 10px;
+	color:#fff;
+}
+.home_square_head{
+	font-size:35px;
+}
+.home_square_body{
+	margin:-10px 0 0 3px;
+	font-size:14px;
+}
+.home_part{
+	
+}
+.home_part_header{
+	height:40px;
+	line-height:40px;
+	margin:0 10px;
+}
+.home_part_main{
+	margin:20px 0;
+}
+.home_part_body{
+	text-align:center;
+}
+.home_part_footer{
+	height:200px;
+	position:relative;
+}
+.home_part_footer > div{
+	position:absolute;
+	bottom:0;
+	left:50px;
+}
+.home_part_footer > div > p{
+	margin-top:12px;
+	margin-bottom:0;
+}
+
+
+
+
+
+
+
+
+
+

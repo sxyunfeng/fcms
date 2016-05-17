@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:14px;
+	background-image: url("/img/admin/fcms/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+self_background{
+	height:100%;
+}
+.self_login_box{
+	width:500px;
+	background-color:rgba(255,255,255,0.6);
+	box-shadow:3px 3px 3px rgba(141,141,141,0.2);
+	border-radius:10px;
+	margin:10% auto;
+}
+.self_input_group{
+	margin:10px auto;
+	width:80%;
+}
+.self_logo{
+	width:200px;
+	margin:20px auto;
+}
+.self_submit{
+	display:block;
+	width:200px;
+	margin:20px auto;
+}
+.self_icon_toggle{
+	color:#d21515;
+}

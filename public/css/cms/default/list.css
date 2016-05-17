@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+.self_breadcrumb{
+	background:none;
+	margin-bottom:0;
+}
+.self_list_author{
+	position:absolute;
+	right:0;
+	bottom:16px;
+}
+.self_list_buttons{
+	float:right;
+	height:50px;
+	font-size:12px;
+}
+.self_list_buttons a{
+	font-size:12px;
+}
+.self_artical{
+	border-top:1px solid #B4B4B4;
+}
+.self_artical .page-header{
+	border:none;
+	position:relative;
+}
+.self_artical p{
+	text-indent:2em;
+}
+.self_sidebar{
+	margin-bottom:20px;
+}
+.self_sidebar li{
+	border:none;
+}
+.list-group a{
+	color:#515151;
+	font-size:17px;
+}
+.list-group a:hover, .list-group a:focus{
+	color:#d60000;
+	font-size:17px;
+}

@@ -1,0 +1,79 @@
+button {
+    margin-right:50px;
+    width:70px;
+}
+th {
+    font-weight: normal;
+}
+table.order th, table.receiver th {
+    width: 100px;
+    background:#f5f5f5;
+}
+.col-xs-2 {
+    padding-left:0;
+}
+
+.wizard-steps {
+    display: table;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.wizard-steps li {
+    display: table-cell;
+    text-align: center;
+    width: 1%;
+}
+.wizard-steps li .step {
+    background-color: #fff;
+    border: 5px solid #ced1d6;
+    border-radius: 100%;
+    color: #546474;
+    display: inline-block;
+    font-size: 15px;
+    height: 40px;
+    line-height: 30px;
+    position: relative;
+    text-align: center;
+    width: 40px;
+    z-index: 2;
+}
+.wizard-steps li.active::before, .wizard-steps li.complete::before, .wizard-steps li.active .step, .wizard-steps li.complete .step {
+    border-color: #5293c4;
+}
+.wizard-steps li:first-child::before {
+    left: 50%;
+    max-width: 51%;
+}
+.wizard-steps li::before {
+    border-top: 4px solid #ced1d6;
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 1px;
+    overflow: hidden;
+    position: relative;
+    top: 21px;
+    width: 100%;
+    z-index: 1;
+}  
+.wizard-steps li.complete .title, .wizard-steps li.active .title {
+    color: #2b3d53;
+}
+.wizard-steps li .title {
+    color: #949ea7;
+    display: block;
+    font-size: 14px;
+    margin-top: 4px;
+    max-width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    word-wrap: break-word;
+    z-index: 104;
+}
+.wizard-steps li:last-child::before {
+    max-width: 50%;
+    width: 50%;
+}

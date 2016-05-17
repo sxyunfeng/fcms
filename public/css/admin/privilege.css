@@ -1,0 +1,82 @@
+ .template 
+{
+    display:none;
+}
+.glyphicon.edit, .glyphicon.add  {
+    color: #337ab7;
+}
+table td, table th {
+    padding-left:0 !important;
+}
+
+.second .name {
+    padding-left:20px !important;
+}
+.third .name {
+    padding-left:40px !important;
+}
+.name .glyphicon
+{
+    margin-right:10px;
+    font-size:12px;
+    cursor:pointer;
+}
+.name .glyphicon:hover {
+    color:green;
+}
+.third .name .glyphicon {
+    display:none;
+}
+.glyphicon-plus {
+    display:none;
+}
+
+.tab-content {
+    padding-top:20px;
+}
+.form-group .btn {
+    margin: 20px 50px 0 0;
+    width:70px;
+}
+.module-input, .controller-input {
+   padding:0;
+   border:0;
+   border-bottom:1px solid #ccc;
+   width: 200px;
+   display:none;
+}
+.typeahead:focus {
+    border-bottom: 1px solid #0097cf;
+}
+.tt-query {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+    color: #999;
+}
+.tt-menu {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 12px 0;
+    padding: 8px 0;
+    width: 200px;
+}
+.tt-suggestion {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 3px 20px;
+}
+.tt-suggestion:hover {
+    background-color: #0097cf;
+    color: #fff;
+    cursor: pointer;
+}
+.tt-suggestion.tt-cursor {
+    background-color: #0097cf;
+    color: #fff;
+}
+.tt-suggestion p {
+    margin: 0;
+}

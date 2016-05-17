@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+.self_artical_details{
+	padding-bottom:20px;
+	word-wrap:break-word;
+}
+.self_artical_details a{
+	border:none;
+}
+.self_artical_visits{
+	text-align:right;
+	padding-bottom:20px;
+}

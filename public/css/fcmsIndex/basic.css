@@ -1,0 +1,390 @@
+@CHARSET "UTF-8";
+body{
+	padding:0;
+	margin:0;
+	font-family:'微软雅黑';
+	color:#67696e;
+	overflow:auto;
+	overflow-x:hidden;
+}
+a{
+	color:#67696e;
+}
+a:hover,
+a:visited,
+a:active{
+	color:black;
+	text-decoration:none;
+	cursor:pointer;
+}
+ul{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+/* 主框架 */
+.bsc_frame{
+	min-width:1000px;
+	padding:0;
+}
+
+/* 头部导航栏 */
+.bsc_header{
+	height:50px;
+	background-color:RGB(78,153,199);
+}
+.bsc_logo{
+	float:left;
+	padding-left:15px;
+}
+.bsc_logo img{
+	height:50px;
+}
+.bsc_logo img:hover{
+	cursor:pointer;
+}
+
+/* 头部导航栏  选项按钮 */
+.bsc_top_buttons{
+	float:right;
+	position:relative;
+}
+.bsc_op_btn{
+	display:inline-block;
+	width:60px;
+	cursor:pointer;
+	text-align:center;
+}
+.bsc_op_btn span{
+	margin:15px 0;
+	font-size:20px;
+	color:#fff;
+}
+.bsc_op_btn:visited,
+.bsc_op_btn:hover,
+.bsc_op_btn:active{
+	background-color:RGB(43,84,110);
+}
+/* animation只支持webkit内核的浏览器,即chrome，firefox */
+.bsc_op_btn span:hover{
+	animation-name:shake;
+	animation-duration:1s;
+	animation-timing-function:ease;
+	animation-iteration-count:1;/* 动画播放次数 */
+}
+@-webkit-keyframes shake{
+	0%{-webkit-transform:scale(1);}
+	10%, 
+	20%{-webkit-transform:scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 
+	90%{-webkit-transform:scale(1.2) rotate(3deg);}
+	40%, 60%, 
+	80%{-webkit-transform:scale(1.2) rotate(-3deg);}
+	100%{-webkit-transform:scale(1) rotate(0);}
+}
+@-moz-keyframes shake{
+	0%{-moz-transform:scale(1);}
+	10%, 
+	20%{-moz-transform:scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 
+	90%{-moz-transform:scale(1.2) rotate(3deg);}
+	40%, 60%, 
+	80%{-moz-transform:scale(1.2) rotate(-3deg);}
+	100%{-moz-transform:scale(1) rotate(0);}
+}
+.bsc_op_back{
+	height:50px;
+	position:absolute;
+	top:0px;
+	right:197px;
+	line-height:49px;
+}
+.bsc_op_back span img{
+	width:23px;
+}
+/* 显示首页  */
+.bsc_show_home{
+	cursor:pointer;
+}
+.bsc_show_home:visited,
+.bsc_show_home:hover,
+.bsc_show_home:active{
+	color:blue;
+}
+/* 头部信息框 公共样式 */
+.bsc_top_buttons ul li{
+	padding:0 10px;
+	height:40px;
+	line-height:40px;
+}
+/* 尖角 */
+.bsc_top_buttons div div{
+	position:absolute;
+	top:-6px;
+    border-top:0px;
+    border-bottom:7px solid #ECF2F7;
+    border-right:7px solid transparent;
+    border-left:7px solid transparent;
+}
+.bsc_top_buttons li a{
+	display:block;
+	border-bottom:1px solid #e4ecf3;
+	margin-top:1px;
+	padding-left:5px;
+}
+.bsc_top_buttons li:hover{
+	background-color:#F4F9FC;
+}
+.bsc_dropdown_menu_msg,
+.bsc_dropdown_menu_set,
+.bsc_dropdown_menu_user{
+	background-color:white;
+	border:1px solid #BCD4E5;
+	position:absolute;
+	display:none;
+	z-index:50;
+	box-shadow:1px 2px 2px #CCCCCC;
+}
+.bsc_dropdown_menu_msg li:first-child,
+.bsc_dropdown_menu_set li:first-child,
+.bsc_dropdown_menu_user li:first-child{
+	font-size:14px;
+	font-weight:bold;
+	background-color:#ECF2F7;
+	color:#4E99C7;
+	border-bottom:1px solid #BCD4E5;
+}
+.bsc_dropdown_menu_msg li:first-child i,
+.bsc_dropdown_menu_set li:first-child i,
+.bsc_dropdown_menu_user li:first-child i{
+	font-size:13px;
+	color:#555555;
+	margin-right:10px;
+}
+.bsc_dropdown_menu_msg li:first-child:hover,
+.bsc_dropdown_menu_set li:first-child:hover,
+.bsc_dropdown_menu_user li:first-child:hover{
+	background-color:#ECF2F7;
+}
+
+/* 消息框 */
+.bsc_dropdown_menu_msg{
+	width:200px;
+	right:122px;
+}
+.bsc_dropdown_menu_msg div{
+	right:28px;
+}
+.bsc_dropdown_menu_msg ul a{
+	white-space:nowrap; 
+	overflow:hidden;
+	text-overflow:ellipsis;
+	padding-left: 8px;
+}
+.bsc_dropdown_menu_msg li:last-child{
+	font-size:12px;
+	height:35px;
+	line-height:35px;
+	color:#4F99C6;
+	text-align:center;
+	cursor:pointer;
+	margin-top:1px;
+}
+.bsc_dropdown_menu_msg li:last-child i{
+	margin-left:3px;
+}
+
+/* 设置框 */
+.bsc_dropdown_menu_set{
+	width:150px;
+	right:58px;
+}
+.bsc_dropdown_menu_set div{
+	right:28px;
+}
+
+/* 用户信息框 */
+.bsc_dropdown_menu_user{
+	width:150px;
+	right:0px;
+}
+.bsc_dropdown_menu_user div{
+	right:22px;
+}
+.bsc_dropdown_menu_set li:last-child a,
+.bsc_dropdown_menu_user li:last-child a{
+	border-bottom:0;
+}
+
+/* 面包屑 */
+.bsc_nav{
+	height:35px;
+	line-height:35px;
+	background-color:RGB(247,247,247);
+	border-bottom:1px solid #ddd;
+}
+.bsc_nav > div:first-child > span{
+	color:#4E99C7;
+}
+.bsc_nav > div:first-child{
+	text-align:center;
+	width:190px;
+	float:left;
+}
+.bsc_nav > div:last-child{
+	margin-left:20px;
+	float:left;
+}
+.bsc_space{
+	margin-left:1em;
+}
+/* 页面主体 */
+.bsc_main{
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+
+/* 左侧菜单框 */
+.bsc_sidebar{
+	width:190px;
+	background-color:RGB(247,247,247);
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	float:left;
+}
+.bsc_user{
+	text-align:center;
+	background:url(/public/img/admin/fcms/sidebar_background.png) no-repeat;
+	background-size:190px 200px;
+	padding:20px 0;
+	color:#fff;
+}
+.bsc_user_image > img{
+	cursor:pointer;
+	height:100px;
+}
+.bsc_user_info{
+	width:150px;
+	margin:0 auto;
+	padding-top:10px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+
+/* 左侧菜单栏 */
+#bsc_menu_first ul{
+	display:none;
+	cursor:pointer;
+}
+.bsc_menu{
+	position:relative;
+}
+.bsc_menu li span{
+	display:inline-block;
+	width:100%;
+	position:relative;
+	z-index:1;
+}
+.bsc_menu a{
+	display:inline-block;
+	height:40px;
+	line-height:40px;
+	border-bottom:1px dotted #ddd;
+}
+.bsc_menu_first > li > span > a{
+	width:100%;
+	padding-left:20px;
+}
+/* 一级菜单图标 */
+.bsc_menu_first > li > span > a > b{
+	display:block;
+	width:17px;
+	height:17px;
+	margin:12px 10px 0 0;
+	background:url(/public/img/admin/fcms/firstMenuIcon.png);
+	background-repeat:no-repeat;
+	float:left;
+}
+.bsc_menu_second > li > span > a{
+	width:169px;
+	padding-left:20px;
+}
+.bsc_menu_third > li > span > a{
+	width:169px;
+	padding-left:40px;
+}
+.bsc_menu li > span:hover,
+.bsc_menu li > span:visited,
+.bsc_menu li > span:active,
+.bsc_menu li > span > a:hover,
+.bsc_menu li > span > a:visited,
+.bsc_menu li > span > a:active{
+	background-color:#fff;
+}
+.bsc_menu_third > li > span > a,
+.bsc_menu_second > li > span > a{
+	margin-left:20px;
+	border-left:1px dotted #8EB3D0;
+}
+
+/* sidebar选中样式 */
+.bsc_menu_second span{
+	background-color:#fff;
+}
+
+/* 右侧高亮边框 */
+.bsc_highlight_border{
+	height:40px;
+	border-right:2px solid #4E99C7;
+	position:absolute;
+	top:0px;
+	right:-2px;
+	z-index:10;
+}
+
+/* 边框尖角 */
+.bsc_highlight_border div{
+	position:absolute;
+	right:0;
+    top: 6px;
+	z-index:2;
+    border: 8px solid transparent;
+    border-width: 14px 7px;
+    border-right-color: #4E99C7;
+}
+
+/* 二级菜单左侧小图标 */
+.bsc_menu_second > li > span > i{
+	width:6px;
+	height:16px;
+	position:absolute;
+	z-index:10;
+	left:17px;	
+	top:12px;
+	background:url(/public/img/admin/fcms/blueArrow.png) no-repeat;
+	background-size: 6px 15px;
+}
+
+/* iframe */
+.bsc_content{
+	padding:0;
+	margin:0;
+	position:absolute;
+	left:190px;
+	top:0;
+	height:100%;
+}
+.bsc_iframe{
+	min-width:768px;
+}
+.bsc_iframe_show{
+	display:inline-block;
+}
+.bsc_iframe_hide{
+	display:none;
+}
+
+

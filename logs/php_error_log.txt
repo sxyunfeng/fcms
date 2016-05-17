@@ -1,0 +1,43 @@
+[26-May-2016 08:49:29 Asia/Shanghai] PHP Parse error:  syntax error, unexpected '$router' (T_VARIABLE) in /Users/bruce/develop/php/cms.huaer.dev/config/router.php on line 16
+[26-May-2016 08:49:45 Asia/Shanghai] PHP Notice:  Memcache::connect(): Server 127.0.0.1 (tcp 11211) failed with: Connection refused (61) in /Users/bruce/develop/php/cms.huaer.dev/config/services.php on line 55
+[26-May-2016 08:49:45 Asia/Shanghai] PHP Warning:  Memcache::connect(): Can't connect to 127.0.0.1:11211, Connection refused (61) in /Users/bruce/develop/php/cms.huaer.dev/config/services.php on line 55
+[26-May-2016 08:49:45 Asia/Shanghai] PHP Notice:  Unknown: Server 127.0.0.1 (tcp 11211) failed with: Connection refused (61) in Unknown on line 0
+[26-May-2016 08:49:45 Asia/Shanghai] PHP Warning:  Unknown: Can't connect to 127.0.0.1:11211, Connection refused (61) in Unknown on line 0
+[26-May-2016 08:49:45 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Phalcon\Cache\Exception' with message 'Cannot connect to Memcached server' in phalcon/cache/backend/memcache.zep:113
+Stack trace:
+#0 [internal function]: Phalcon\Cache\Backend\Memcache->_connect()
+#1 [internal function]: Phalcon\Cache\Backend\Memcache->save('cpci42fcs3etl0s...', '', 8600)
+#2 [internal function]: Phalcon\Session\Adapter\Memcache->write('cpci42fcs3etl0s...', '')
+#3 {main}
+  thrown in phalcon/cache/backend/memcache.zep on line 113
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: configReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 222
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: logsReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 228
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: routerReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 234
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: cache1Path in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 238
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: cache1WriteId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 239
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: cache1ReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 240
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: cache2Path in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 244
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: cache2WriteId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 245
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: cache2ReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 246
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: cache3Path in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 250
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: cache3WriteId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 251
+[26-May-2016 08:50:04 Asia/Shanghai] PHP Notice:  Undefined variable: cache3ReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 252
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: configReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 222
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: logsReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 228
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: routerReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 234
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: cache1Path in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 238
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: cache1WriteId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 239
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: cache1ReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 240
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: cache2Path in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 244
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: cache2WriteId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 245
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: cache2ReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 246
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: cache3Path in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 250
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: cache3WriteId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 251
+[26-May-2016 08:50:22 Asia/Shanghai] PHP Notice:  Undefined variable: cache3ReadId in /Users/bruce/develop/php/cms.huaer.dev/apps/install/cache/_users_bruce_develop_php_cms.huaer.dev_apps_install_views_index_check.volt.php on line 252
+[26-May-2016 08:53:26 Asia/Shanghai] PHP Fatal error:  Class 'Redis' not found in /Users/bruce/develop/php/cms.huaer.dev/config/services.php on line 351
+[26-May-2016 08:58:24 Asia/Shanghai] PHP Fatal error:  Class 'Redis' not found in /Users/bruce/develop/php/cms.huaer.dev/config/services.php on line 351
+[26-May-2016 08:58:28 Asia/Shanghai] PHP Fatal error:  Class 'Redis' not found in /Users/bruce/develop/php/cms.huaer.dev/config/services.php on line 351
+[26-May-2016 08:58:29 Asia/Shanghai] PHP Fatal error:  Class 'Redis' not found in /Users/bruce/develop/php/cms.huaer.dev/config/services.php on line 351
+[26-May-2016 08:58:30 Asia/Shanghai] PHP Fatal error:  Class 'Redis' not found in /Users/bruce/develop/php/cms.huaer.dev/config/services.php on line 351
+[26-May-2016 08:58:31 Asia/Shanghai] PHP Fatal error:  Class 'Redis' not found in /Users/bruce/develop/php/cms.huaer.dev/config/services.php on line 351
+[26-May-2016 08:58:31 Asia/Shanghai] PHP Fatal error:  Class 'Redis' not found in /Users/bruce/develop/php/cms.huaer.dev/config/services.php on line 351

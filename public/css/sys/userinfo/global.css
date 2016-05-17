@@ -1,0 +1,8 @@
+.fl{ float:left; }
+.def_hide{ display:none; }
+.msYahei{ font-family:Microsoft YaHei; }
+table#usrInfoTable tbody tr td {
+width:33.3%; height:51px; vertical-align:middle;
+}
+span.glyphicon { font-size: 16px; }
+div#modal_input input { margin-bottom:10px; }

@@ -1,0 +1,20 @@
+ .modal-body span, .form-special span { 
+     cursor:pointer;
+ }
+.label { 
+    margin-right:5px; 
+    display:inline-block;
+}
+ dl { 
+     margin-bottom: 10px;
+ }
+.dl-horizontal dt { 
+    text-align: left;width: 80px; 
+}
+.dl-horizontal dd { 
+    margin-left:0; 
+}
+.modal-body { 
+    height:300px; 
+    overflow-y: scroll;
+}

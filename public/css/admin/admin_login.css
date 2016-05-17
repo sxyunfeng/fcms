@@ -1,0 +1,116 @@
+@CHARSET "UTF-8";
+
+html {
+    background: none repeat scroll 0 0 #1262b7;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial,"Microsoft Yahei";
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    animation: 600ms linear 0s normal none 1 bounceIn;
+    margin: 180px auto 0;
+    overflow: hidden;
+    width: 250px;
+}
+h1 a {
+    background: url("/img/admin/index/login/logo.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+    text-indent: -2000em;
+    width: 250px;
+}
+.login ul, .login li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.login ul {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #2d2e30;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #ccc inset;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 248px;
+}
+.login li {
+    border-top: 1px solid #d3d4d4;
+    padding: 5px;
+}
+.login li img {
+    vertical-align: top;
+}
+.login .input {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-family: Arial,"Microsoft Yahei";
+    font-size: 18px;
+    padding: 5px;
+    vertical-align: middle;
+    width: 225px;
+}
+.login .input:focus {
+    outline: 0 none;
+}
+.btn {
+    background: url("/img/admin/index/login/btn.png") no-repeat scroll 0 0 #549fcc;
+    border: 1px solid #2d2e30;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial,"Microsoft Yahei";
+    font-size: 20px;
+    height: 38px;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    vertical-align: middle;
+    width: 248px;
+}
+.btn:hover {
+    background-position: 0 -40px;
+}
+.btn:active {
+    background-position: 0 -80px;
+}
+.placeholder {
+    color: #999;
+}
+@keyframes bounceIn {
+0% {
+    opacity: 0;
+    transform: scale(0.3);
+}
+50% {
+    opacity: 1;
+    transform: scale(1.05);
+}
+70% {
+    transform: scale(0.9);
+}
+100% {
+    transform: scale(1);
+}
+}
+@keyframes bounceIn {
+0% {
+    opacity: 0;
+    transform: scale(0.3);
+}
+50% {
+    opacity: 1;
+    transform: scale(1.05);
+}
+70% {
+    transform: scale(0.9);
+}
+100% {
+    transform: scale(1);
+}
+}

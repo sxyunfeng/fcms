@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.self_search_pageheader{
+	padding:0;
+}
+.self_search_footer{
+	
+	padding:0 15px 15px;
+}
+.self_search_footer span{
+	display:inline-block;
+	margin-right:20px;
+	color:#b4b4b4;
+}
+.self_artical img{
+	max-height:90px;
+	max-width:120px;
+}

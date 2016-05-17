@@ -1,0 +1,100 @@
+ .folder {
+    color:gold; 
+    margin: 15px 0;
+    height:auto;
+    cursor:pointer;
+}
+.title {
+    margin-top:-15px;
+    font-size:14px; 
+    width:100px;
+}
+.folder-nav {
+    cursor:pointer;
+}
+.breadcrumb {
+    margin: 0;
+    padding-left:0;
+    background: transparent;
+}
+.row {
+    margin-bottom: 20px;
+}
+.nav-pills i {
+    margin-right: 5px;
+}
+.thumbnail {
+    width:110px;
+    height:110px;
+    border:0;
+}
+.thumbnail:hover {
+    cursor:pointer;
+}
+.thumbnail .folder {
+    font-size:90px;
+}
+
+.row  p {
+    margin-top:-15px;
+    font-size:14px;
+    overflow: hidden;
+    width:100px;
+}
+.row img {
+    width:100px;
+    height:100px;
+}
+
+.popupMenu {
+    position:fixed;
+    padding:5px 0;
+    background: #fff;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    display:none;
+}
+.popupMenu a {
+    padding:3px 10px;
+    width:100px;
+    display:block;
+    cursor:pointer;
+}
+.popupMenu a:hover {
+    text-decoration: none;
+    background: #eee;
+}
+.popupMenu i {
+    margin-right: 10px;
+}
+.folder-item, .image-item {
+    margin-left:15px;
+    display:inline-block;
+}
+
+.folder-item.selected, .image-item.selected {
+    color:#3c763d;
+}
+.template {
+    display:none;
+}
+.navs {
+    border-bottom: 1px solid #eee;
+}
+.footer-pagination {
+    position: fixed;
+    left: 40%;
+    bottom:0;
+    z-index:100;
+}
+.enlarge {
+    position:fixed;
+    display:none;
+}
+.enlarge  img {
+    width:300px;
+    height:300px;
+}
+.thumbnail.selected {
+    border:1px solid #3c763d;
+}
